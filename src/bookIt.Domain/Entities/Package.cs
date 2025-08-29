@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/Package.cs
 namespace bookIt.Domain.Entities;
 
-public class Package
+public class Package : BaseEntity
 {
-    public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public decimal Price { get; set; }
     public int NumberOfSessions { get; set; }

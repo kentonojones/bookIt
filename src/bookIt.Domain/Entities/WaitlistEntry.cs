@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/WaitlistEntry.cs
 namespace bookIt.Domain.Entities;
 
-public class WaitlistEntry
+public class WaitlistEntry : BaseEntity
 {
-    public int Id { get; set; }
     public DateTime RequestDate { get; set; }
 
     // Foreign Keys and Navigation Properties

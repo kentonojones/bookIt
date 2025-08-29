@@ -1,8 +1,8 @@
+// File: src/bookIt.Domain/Entities/Location.cs
 namespace bookIt.Domain.Entities;
 
-public class Location
+public class Location : BaseEntity
 {
-    public int Id { get; set; }
     public string Address { get; set; } = string.Empty;
 
     // Foreign Key and Navigation Property for Business

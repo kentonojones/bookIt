@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/ApiKey.cs
 namespace bookIt.Domain.Entities;
 
-public class ApiKey
+public class ApiKey : BaseEntity
 {
-    public int Id { get; set; }
     public string KeyHash { get; set; } = string.Empty;
     public DateTime CreatedDate { get; set; }
     public bool IsActive { get; set; }

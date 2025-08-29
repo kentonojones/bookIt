@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/FormField.cs
 namespace bookIt.Domain.Entities;
 
-public class FormField
+public class FormField : BaseEntity
 {
-    public int Id { get; set; }
     public string Question { get; set; } = string.Empty;
     public string FieldType { get; set; } = string.Empty; // e.g., Text, Checkbox, Date
     public bool IsRequired { get; set; }

@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/User.cs
 namespace bookIt.Domain.Entities;
 
-public class User
+public class User : BaseEntity
 {
-    public int Id { get; set; }
     public string Email { get; set; } = string.Empty;
     public string PasswordHash { get; set; } = string.Empty;
     public bool IsDeleted { get; set; }

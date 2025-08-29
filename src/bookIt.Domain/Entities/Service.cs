@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/Service.cs
 namespace bookIt.Domain.Entities;
 
-public class Service
+public class Service : BaseEntity
 {
-    public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public decimal Price { get; set; }
     public TimeSpan Duration { get; set; }

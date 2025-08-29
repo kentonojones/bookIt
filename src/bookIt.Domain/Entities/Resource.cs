@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/Resource.cs
 namespace bookIt.Domain.Entities;
 
-public class Resource
+public class Resource : BaseEntity
 {
-    public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
 
     // Foreign Key and Navigation Property for Location

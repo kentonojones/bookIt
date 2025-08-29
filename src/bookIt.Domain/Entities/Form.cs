@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/Form.cs
 namespace bookIt.Domain.Entities;
 
-public class Form
+public class Form : BaseEntity
 {
-    public int Id { get; set; }
     public string Title { get; set; } = string.Empty;
 
     // Foreign Key and Navigation Property for Business

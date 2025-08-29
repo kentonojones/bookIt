@@ -3,7 +3,8 @@ namespace bookIt.Domain.Entities;
 
 public class Inventory
 {
-    // Composite Primary Key would be configured in DbContext
+    // NOTE: This class uses a composite primary key.
+    // See Step 3 in the API guide for DbContext configuration.
     public int ProductId { get; set; }
     public virtual Product Product { get; set; } = null!;
 

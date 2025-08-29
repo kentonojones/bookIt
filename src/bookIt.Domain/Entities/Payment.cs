@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/Payment.cs
 namespace bookIt.Domain.Entities;
 
-public class Payment
+public class Payment : BaseEntity
 {
-    public int Id { get; set; }
     public decimal Amount { get; set; }
     public string StripeTransactionId { get; set; } = string.Empty;
     public DateTime PaymentDate { get; set; }

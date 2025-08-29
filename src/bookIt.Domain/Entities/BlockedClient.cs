@@ -3,7 +3,8 @@ namespace bookIt.Domain.Entities;
 
 public class BlockedClient
 {
-    // Composite Primary Key would be configured in DbContext
+    // NOTE: This class uses a composite primary key.
+    // See Step 3 in the API guide for DbContext configuration.
     public int BusinessId { get; set; }
     public virtual Business Business { get; set; } = null!;
 

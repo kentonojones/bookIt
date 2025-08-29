@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/ClientProfile.cs
 namespace bookIt.Domain.Entities;
 
-public class ClientProfile
+public class ClientProfile : BaseEntity
 {
-    public int Id { get; set; }
     public string Notes { get; set; } = string.Empty;
 
     // Foreign Keys and Navigation Properties

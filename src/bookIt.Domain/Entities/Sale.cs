@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/Sale.cs
 namespace bookIt.Domain.Entities;
 
-public class Sale
+public class Sale : BaseEntity
 {
-    public int Id { get; set; }
     public decimal TotalAmount { get; set; }
     public DateTime SaleDate { get; set; }
 

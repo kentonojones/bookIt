@@ -1,10 +1,8 @@
 // File: src/bookIt.Domain/Entities/StaffMember.cs
 namespace bookIt.Domain.Entities;
 
-public class StaffMember
+public class StaffMember : BaseEntity
 {
-    public int Id { get; set; }
-
     // Foreign Keys and Navigation Properties
     public int UserId { get; set; }
     public virtual User User { get; set; } = null!;

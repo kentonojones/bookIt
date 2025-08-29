@@ -1,8 +1,7 @@
 // File: src/bookIt.Domain/Entities/AppointmentStatus.cs
 namespace bookIt.Domain.Entities;
 
-public class AppointmentStatus
+public class AppointmentStatus : BaseEntity
 {
-    public int Id { get; set; }
     public string Status { get; set; } = string.Empty; // e.g., Scheduled, Completed, Cancelled, NoShow
 }

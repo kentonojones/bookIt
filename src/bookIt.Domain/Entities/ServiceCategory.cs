@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/ServiceCategory.cs
 namespace bookIt.Domain.Entities;
 
-public class ServiceCategory
+public class ServiceCategory : BaseEntity
 {
-    public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
 
     // Foreign Key and Navigation Property for Business

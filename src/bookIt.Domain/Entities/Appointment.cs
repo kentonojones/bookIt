@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/Appointment.cs
 namespace bookIt.Domain.Entities;
 
-public class Appointment
+public class Appointment : BaseEntity
 {
-    public int Id { get; set; }
     public DateTime StartTime { get; set; }
     public DateTime EndTime { get; set; }
 

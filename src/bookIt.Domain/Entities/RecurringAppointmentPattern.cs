@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/RecurringAppointmentPattern.cs
 namespace bookIt.Domain.Entities;
 
-public class RecurringAppointmentPattern
+public class RecurringAppointmentPattern : BaseEntity
 {
-    public int Id { get; set; }
     public string Frequency { get; set; } = string.Empty; // e.g., Weekly, Monthly
     public int Interval { get; set; } // e.g., every 2 weeks -> Frequency=Weekly, Interval=2
     public DateOnly EndDate { get; set; }

@@ -1,9 +1,8 @@
 // File: src/bookIt.Domain/Entities/Business.cs
 namespace bookIt.Domain.Entities;
 
-public class Business
+public class Business : BaseEntity
 {
-    public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public bool IsDeleted { get; set; }
 
