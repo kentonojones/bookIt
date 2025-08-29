@@ -148,6 +148,9 @@
             "projectReferences": {
               "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Application\\bookIt.Application.csproj": {
                 "projectPath": "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Application\\bookIt.Application.csproj"
+              },
+              "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Domain\\bookIt.Domain.csproj": {
+                "projectPath": "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Domain\\bookIt.Domain.csproj"
               }
             }
           }

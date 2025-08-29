@@ -12,4 +12,8 @@ public class Sale : BaseEntity
 
     public int StaffMemberId { get; set; }
     public virtual StaffMember StaffMember { get; set; } = null!;
+
+    // Added link to the appointment for better tracking
+    public int? AppointmentId { get; set; } 
+    public virtual Appointment? Appointment { get; set; }
 }

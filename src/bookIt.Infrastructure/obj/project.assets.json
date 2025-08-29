@@ -4752,7 +4752,8 @@
       "Microsoft.EntityFrameworkCore >= 9.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.8",
-      "bookIt.Application >= 1.0.0"
+      "bookIt.Application >= 1.0.0",
+      "bookIt.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4782,6 +4783,9 @@
           "projectReferences": {
             "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Application\\bookIt.Application.csproj": {
               "projectPath": "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Application\\bookIt.Application.csproj"
+            },
+            "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Domain\\bookIt.Domain.csproj": {
+              "projectPath": "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Domain\\bookIt.Domain.csproj"
             }
           }
         }

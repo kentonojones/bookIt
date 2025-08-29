@@ -51,6 +51,12 @@
               "target": "Package",
               "version": "[8.0.19, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -223,6 +229,9 @@
             "projectReferences": {
               "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Application\\bookIt.Application.csproj": {
                 "projectPath": "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Application\\bookIt.Application.csproj"
+              },
+              "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Domain\\bookIt.Domain.csproj": {
+                "projectPath": "C:\\Users\\kento\\OneDrive\\Documents\\Appointment Booking Application Project\\ABA Project - Phase 2\\bookIt\\src\\bookIt.Domain\\bookIt.Domain.csproj"
               }
             }
           }

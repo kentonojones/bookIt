@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "84V7jD7mr4ZqLzWdIcePqgaDe5On5xfCtzZEg+RVBSg=",
+  "Source": "bookIt.Api",
+  "BasePath": "_content/bookIt.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

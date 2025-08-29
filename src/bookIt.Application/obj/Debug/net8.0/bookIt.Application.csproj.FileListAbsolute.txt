@@ -1,0 +1,16 @@
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\bin\Debug\net8.0\bookIt.Application.deps.json
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\bin\Debug\net8.0\bookIt.Application.dll
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\bin\Debug\net8.0\bookIt.Application.pdb
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\bin\Debug\net8.0\bookIt.Domain.dll
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\bin\Debug\net8.0\bookIt.Domain.pdb
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\bookIt.Application.csproj.AssemblyReference.cache
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\bookIt.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\bookIt.Application.AssemblyInfoInputs.cache
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\bookIt.Application.AssemblyInfo.cs
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\bookIt.Application.csproj.CoreCompileInputs.cache
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\bookIt.Application.sourcelink.json
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\bookIt.A.84854AE0.Up2Date
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\bookIt.Application.dll
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\refint\bookIt.Application.dll
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\bookIt.Application.pdb
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Application\obj\Debug\net8.0\ref\bookIt.Application.dll
