@@ -1,6 +1,8 @@
 using bookIt.Infrastructure.Data;
 using bookIt.Infrastructure.Data.Interceptors;
 using Microsoft.EntityFrameworkCore;
+using bookIt.Application.Interfaces;
+using bookIt.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,7 @@ builder.Services.AddControllers()
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 
 // --- START: Database Configuration ---
 
@@ -44,4 +47,9 @@ app.UseAuthorization(); // Add this line for authorization middleware
 app.MapControllers(); // Add this line to map controller routes
 app.UseAuthorization();
 app.MapControllers();
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await bookIt.Infrastructure.Data.DataSeeder.SeedDataAsync(services);
+}
 app.Run();
