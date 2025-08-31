@@ -5,8 +5,10 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers(); // Add this line to register controllers
-
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(options =>
+        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+    );
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -40,5 +42,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization(); // Add this line for authorization middleware
 
 app.MapControllers(); // Add this line to map controller routes
-
+app.UseAuthorization();
+app.MapControllers();
 app.Run();
