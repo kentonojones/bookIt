@@ -179,3 +179,4 @@ C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Pr
 C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\kento\OneDrive\Documents\Appointment Booking Application Project\ABA Project - Phase 2\bookIt\src\bookIt.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

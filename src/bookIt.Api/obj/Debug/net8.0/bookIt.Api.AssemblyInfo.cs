@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("96bc11a0-b2ec-4a3c-9933-6bbce58eb093")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("bookIt.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78a5069752e4cf182ff5b086cde628b20c2015fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d65eb5191158e6d37d53bfdda9e001cbd316d29")]
 [assembly: System.Reflection.AssemblyProductAttribute("bookIt.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bookIt.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
