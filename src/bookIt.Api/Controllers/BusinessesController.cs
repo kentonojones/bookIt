@@ -1,6 +1,6 @@
 using bookIt.Application.Dtos;
 using bookIt.Domain.Entities;
-using bookIt.Infrastructure.Data;
+using bookIt.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,9 +10,9 @@ namespace bookIt.Api.Controllers;
 [Route("api/[controller]")]
 public class BusinessesController : ControllerBase
 {
-    private readonly ApplicationDbContext _context;
+    private readonly IApplicationDbContext _context;
 
-    public BusinessesController(ApplicationDbContext context)
+    public BusinessesController(IApplicationDbContext context)
     {
         _context = context;
     }
@@ -47,7 +47,7 @@ public class BusinessesController : ControllerBase
         };
 
         _context.Businesses.Add(business);
-        await _context.SaveChangesAsync();
+        await _context.SaveChangesAsync(default);
 
         return CreatedAtAction(nameof(GetBusiness), new { id = business.Id }, business);
     }
@@ -64,9 +64,8 @@ public class BusinessesController : ControllerBase
         }
 
         business.Name = updateBusinessDto.Name;
-        _context.Entry(business).State = EntityState.Modified;
-
-        await _context.SaveChangesAsync();
+        _context.Businesses.Update(business);
+        await _context.SaveChangesAsync(default);
 
         return NoContent();
     }
@@ -82,8 +81,8 @@ public class BusinessesController : ControllerBase
         }
 
         business.IsDeleted = true;
-        _context.Entry(business).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
+        _context.Businesses.Update(business);
+        await _context.SaveChangesAsync(default);
 
         return NoContent();
     }
