@@ -9,11 +9,25 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// --- START: Enterprise Security (CORS) ---
+// We must tell the API that our React app (running on localhost:5173) is allowed to call it.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp",
+        policy =>   
+        {
+            policy.WithOrigins("http://localhost:5173") // Default Vite Port
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+// --- END: Enterprise Security (CORS) ---
+
 builder.Services.AddControllers()
     .AddNewtonsoftJson(options =>
         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
     );
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -32,17 +46,13 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
 });
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 
-// --- START: Database Configuration ---
-
-// 1. Register the custom interceptor as a scoped service.
 builder.Services.AddScoped<AuditableEntityInterceptor>();
 
-// 2. Register the ApplicationDbContext and configure it to use SQL Server and the interceptor.
 builder.Services.AddDbContext<ApplicationDbContext>((sp, options) =>
 {
     var interceptor = sp.GetRequiredService<AuditableEntityInterceptor>();
@@ -50,25 +60,27 @@ builder.Services.AddDbContext<ApplicationDbContext>((sp, options) =>
     options.UseSqlServer(connectionString).AddInterceptors(interceptor);
 });
 
-// --- END: Database Configuration ---
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// CRITICAL: Apply the CORS policy before other middleware
+app.UseCors("AllowReactApp");
 
-app.UseAuthorization(); // for authorization middleware
+app.UseHttpsRedirection();
 app.UseAuthentication();
-app.MapControllers(); // map controller routes
+app.UseAuthorization();
+
+app.MapControllers();
+
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     await bookIt.Infrastructure.Data.DataSeeder.SeedDataAsync(services);
 }
+
 app.Run();
